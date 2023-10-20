@@ -1,1 +1,1 @@
-# LearnWithNavendu_Notes
+This respository contains notes for students of [Learn With Navendu](https://www.youtube.com/@LearnWithNavendu) YouTube channel.
