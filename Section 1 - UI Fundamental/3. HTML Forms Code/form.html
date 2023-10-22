@@ -1,0 +1,65 @@
+<html>
+  <body>
+    <form action="result.html" method="get">
+      <div>
+        <label for="fn">First Name:</label>
+        <input type="text" name="fName" id="fn" required />
+      </div>
+      <div>
+        <label for="ln">Last Name:</label>
+        <input type="text" name="lName" id="ln" />
+      </div>
+      <div>
+        <label for="ps">Password:</label>
+        <input type="password" name="pass" id="ps" required />
+      </div>
+      <div>
+        <label for="em">Email:</label>
+        <input type="email" name="email" id="em" />
+      </div>
+      <div>
+        <label for="ag">Age:</label>
+        <input type="number" name="age" id="ag" min="1" max="150" />
+      </div>
+      <div>
+        <label for="ff">Favorites Food:</label>
+        <select name="favFood" id="ff">
+          <option value="Chinese">Chinese Food</option>
+          <option value="Thai">Thai Food</option>
+        </select>
+      </div>
+      <div>
+        Gender
+        <div>
+          <label for="m">Male</label>
+          <input type="radio" name="gender" id="m" value="male" />
+        </div>
+        <div>
+          <label for="f">Female</label>
+          <input type="radio" name="gender" id="f" value="female" />
+        </div>
+      </div>
+      <div>
+        Favorite Movies:
+        <div>
+          <label for="sh">Shaan</label>
+          <input type="checkbox" name="favMovie" value="shaan" id="sh" />
+        </div>
+        <div>
+          <label for="sho">Sholay</label>
+          <input type="checkbox" name="favMovie" value="sholay" id="sho" />
+        </div>
+      </div>
+      <div>
+        <label for="am">About Me:</label>
+        <textarea name="aboutMe" id="am"></textarea>
+      </div>
+      <div>
+        <label for="res">Resume:</label>
+        <input type="file" name="resume" id="res" />
+      </div>
+      <button type="reset">Clean Form</button>
+      <button type="submit">Submit Form</button>
+    </form>
+  </body>
+</html>

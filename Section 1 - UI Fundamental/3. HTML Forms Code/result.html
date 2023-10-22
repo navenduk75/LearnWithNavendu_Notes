@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <a href="form.html">Main Page</a>
+    <div id="data"></div>
+    <script>
+      const data = document.getElementById("data");
+      new URLSearchParams(window.location.search).forEach((value, name) => {
+        data.append(name + ": " + value);
+        data.append(document.createElement("br"));
+      });
+    </script>
+  </body>
+</html>
