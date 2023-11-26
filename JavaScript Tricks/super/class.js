@@ -4,7 +4,7 @@ class Employee {
     this.inOffice = false;
   }
 
-  login = function () {
+  login() {
     this.inOffice = true;
     console.log(`${this.name} is in office`);
   };
