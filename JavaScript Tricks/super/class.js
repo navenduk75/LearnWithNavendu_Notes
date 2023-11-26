@@ -1,13 +1,14 @@
+//super
 class Employee {
   constructor(name) {
     this.name = name;
     this.inOffice = false;
   }
 
-  login = function () {
+  login() {
     this.inOffice = true;
     console.log(`${this.name} is in office`);
-  };
+  }
 
   logout() {
     this.inOffice = false;
@@ -18,28 +19,23 @@ Employee.prototype.companyName = "Microsoft Corporation";
 
 class Manager extends Employee {
   constructor(name, level) {
-    //must be the first line.
-    //super() must be called before you can use 'this'.
     super(name);
 
     this.level = level;
+
+    console.log(super.companyName);
   }
 
   login() {
-    console.log("Alert: Manager in office");
+    console.log("ALERT: Manager is in office.");
     super.login();
-  }
-
-  logout() {
-    console.log("WOW: Manager out of office. Enjoy");
-    super.logout();
   }
 }
 
-let john = new Employee("John");
-let amit = new Employee("Amit");
-let ashish = new Manager("Ashish", 2);
+let emp1 = new Employee("John");
+let emp2 = new Employee("Amit");
+let manager = new Manager("Ashish", 2);
 
-console.log(john);
-console.log(amit);
-console.log(ashish);
+console.log(emp1);
+console.log(emp2);
+console.log(manager);
