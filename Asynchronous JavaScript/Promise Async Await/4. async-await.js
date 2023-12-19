@@ -12,18 +12,18 @@ const p1 = new Promise((resolve, reject) => {
   }
 });
 
-function onError(e) {
-  console.log(e);
-}
-
 p1.then((result) => {
   console.log(result);
   return Promise.resolve("From 1st callback");
 })
-  .then((result) => {
-    console.log(result);
-    return Promise.reject("Error in 2nd callback");
-  })
-  .then((result) => console.log(result))
-  .then((result) => console.log(result))
-  .catch(onError);
+.then((result) => {
+  console.log(result);
+  return Promise.reject("Error in 2nd callback");
+})
+.then((result) => console.log(result))
+.then((result) => console.log(result))
+.catch(onError);
+
+function onError(e) {
+  console.log(e);
+}

@@ -1,29 +1,27 @@
-const p1 = new Promise((resolve, reject) => {
-  const success = false;
+function getUser() {
+  return new Promise((resolve, reject) => {
+    const success = true;
 
-  if (success) {
-    setTimeout((_) => {
-      resolve("All good");
-    }, 5000);
-  } else {
-    setTimeout((_) => {
-      reject("An error has occured");
-    }, 5000);
-  }
-});
-
-p1.then((result) => {
-  console.log(result);
-  return Promise.resolve("From 1st callback");
-})
-  .then((result) => {
-    console.log(result);
-    return Promise.reject("Error in 2nd callback");
-  })
-  .then((result) => console.log(result))
-  .then((result) => console.log(result))
-  .catch(onError);
-
-function onError(e) {
-  console.log(e);
+    if (success) {
+      resolve({ name: "Amit", age: 35 });
+    } else {
+      reject("Error fetching user");
+    }
+  });
 }
+
+function consumePromise() {
+  getUser()
+    .then((result) => {
+      console.log(result);
+      return Promise.resolve("From 1st callback");
+    })
+    .then((result) => {
+      console.log(result);
+      return Promise.reject("Error in 2nd callback");
+    })
+    .then((result) => console.log(result))
+    .catch((e) => console.log(e));
+}
+
+consumePromise();
