@@ -1,0 +1,4 @@
+/* You can add global styles to this file, and also import other style files */
+.custom-row-colors .row:nth-child(even) {
+    background-color: rgb(227, 211, 211);
+}

@@ -1,0 +1,44 @@
+<h2>Observable vs Promise</h2>
+<p>
+  Both are used to handle asynchronous operations. But Observables are more
+  powerful and flexible than promises. It has more features than promises.
+</p>
+<p>
+  Promises are simpler and well-suited for situations where a single
+  asynchronous result is expected.
+</p>
+<p>
+  Consider the specific requirements of your application and choose the
+  asynchronous pattern that best fits your needs.
+</p>
+<div class="container custom-row-colors text-center mt-4">
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5"><b>Observable</b></div>
+    <div class="col-5"><b>Promise</b></div>
+  </div>
+  <div class="row">
+    <div class="col-1">1</div>
+    <div class="col-5">Needs RxJs library.</div>
+    <div class="col-5">Built-in feature of JavaScript. No library needed.</div>
+  </div>
+  <div class="row">
+    <div class="col-1">1</div>
+    <div class="col-5">
+      Good choice to handle streams of data (multiple values) over time.
+    </div>
+    <div class="col-5">Designed to handle single asynchronous data.</div>
+  </div>
+  <div class="row primary">
+    <div class="col-1">2</div>
+    <div class="col-5">Supports operators for data transformation</div>
+    <div class="col-5">No operator support</div>
+  </div>
+  <div class="row primary">
+    <div class="col-1">3</div>
+    <div class="col-5">Can be cancelled</div>
+    <div class="col-5">
+      No built-in support for cancellation. So, can't be cancelled
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+}
+
+.item {
+    width: 200px;
+}
+
+
