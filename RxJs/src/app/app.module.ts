@@ -3,10 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ObservableVsPromiseComponent } from './observable-vs-promise/observable-vs-promise.component';
 
 @NgModule({
-  declarations: [AppComponent, ObservableVsPromiseComponent],
+  declarations: [AppComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
