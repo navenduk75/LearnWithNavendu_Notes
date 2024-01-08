@@ -2,11 +2,11 @@ RxJs/node_modules/
 RxJs/.vscode/
 
 /CSharpTopics/.vs
-/CSharpTopics/Interfaces/bin/Debug/net8.0
+/CSharpTopics/Interfaces/bin
 /CSharpTopics/Interfaces/obj
-/CSharpTopics/Interfaces.Tests/bin/Debug/net8.0
+/CSharpTopics/Interfaces.Tests/bin
 /CSharpTopics/Interfaces.Tests/obj
-/CSharpTopics/StrategyPattern/bin/Debug/net8.0
+/CSharpTopics/StrategyPattern/bin
 /CSharpTopics/StrategyPattern/obj
-/CSharpTopics/StrategyPattern.Tests/bin/Debug/net8.0
+/CSharpTopics/StrategyPattern.Tests/bin
 /CSharpTopics/StrategyPattern.Tests/obj

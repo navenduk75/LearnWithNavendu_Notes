@@ -15,6 +15,11 @@ const routes: Routes = [
       import('./operators/operators.module').then((m) => m.OperatorsModule),
   },
   {
+    path: 'subjects',
+    loadChildren: () =>
+      import('./subjects/subjects.module').then((m) => m.SubjectsModule),
+  },
+  {
     path: '**',
     redirectTo: '/',
   },
