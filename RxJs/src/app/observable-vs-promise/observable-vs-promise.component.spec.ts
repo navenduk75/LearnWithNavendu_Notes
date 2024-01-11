@@ -8,7 +8,7 @@ describe('ObservableVsPromiseComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ObservableVsPromiseComponent]
+      declarations: [ObservableVsPromiseComponent],
     });
     fixture = TestBed.createComponent(ObservableVsPromiseComponent);
     component = fixture.componentInstance;

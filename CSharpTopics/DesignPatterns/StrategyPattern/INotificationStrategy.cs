@@ -1,4 +1,4 @@
-﻿namespace StrategyPattern
+﻿namespace DesignPatterns.StrategyPattern
 {
     public interface INotificationStrategy
     {

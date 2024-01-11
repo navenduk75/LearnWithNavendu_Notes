@@ -1,4 +1,4 @@
-﻿namespace StrategyPattern.Strategies
+﻿namespace DesignPatterns.StrategyPattern.Strategies
 {
     public class NullStrategy : INotificationStrategy
     {
